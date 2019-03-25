@@ -1,0 +1,141 @@
+.background {
+  text-align: center;
+  color: #fff;
+  background-image: url(../media/water-droplets-on-a-hanging-white-tulip.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 300px;
+  padding-bottom: 200px; }
+
+.menu_choice {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: xx-large;
+  display: inline-block; }
+  .menu_choice:hover {
+    text-decoration: none;
+    color: black; }
+
+.menu_choice:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease; }
+
+.menu_choice:hover:after {
+  width: 100%;
+  background: black; }
+
+.menu {
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  background-color: #444C44;
+  text-align: center;
+  opacity: 0.85;
+  box-shadow: 0 0 7px rgba(128, 128, 128, 0.5);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 100%;
+  padding-top: 180px;
+  display: unset;
+  z-index: 9;
+  animation: not-checked-anim 1s ease-in-out both; }
+  .menu__link {
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    transition: 0.3s ease-in-out;
+    padding: 10px 24px 10px 10px;
+    display: block; }
+  .menu li {
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    transition: 0.3s ease-in-out; }
+
+#menu-checkbox {
+  display: block;
+  width: 40px;
+  height: 35px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 11; }
+
+.burger__element {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 12px;
+  background-color: #000;
+  width: 30px;
+  height: 4px;
+  margin: 4px;
+  transition: 0.5s ease-in-out;
+  z-index: 10;
+  cursor: pointer;
+  border-radius: 3px; }
+  .burger__element::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: #000;
+    width: 30px;
+    height: 4px;
+    border-radius: 3px; }
+  .burger__element::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    background-color: #000;
+    width: 30px;
+    height: 4px;
+    border-radius: 3px; }
+
+#menu-checkbox:checked ~ .burger__element {
+  transform: rotate(180deg);
+  transition: 0.5s ease-in-out; }
+
+#menu-checkbox:checked ~ .burger__element::before {
+  width: 20px;
+  top: 2px;
+  left: -8px;
+  transform: rotate(45deg) translateX(5px);
+  transition: 0.5s ease-in-out; }
+
+#menu-checkbox:checked ~ .burger__element::after {
+  width: 20px;
+  top: 2px;
+  left: -12px;
+  -webkit-transform: rotate(-45deg) translateX(-5px);
+  transform: rotate(-45deg) translateX(12px);
+  transition: 1s ease-in-out; }
+
+#menu-checkbox:checked ~ .menu {
+  animation: checked-anim 1s ease-in-out both; }
+
+@keyframes checked-anim {
+  0% {
+    transform: translateX(0%); }
+  100% {
+    transform: translateX(-100%); } }
+@keyframes not-checked-anim {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0%); } }
+
+/*# sourceMappingURL=style.css.map */
