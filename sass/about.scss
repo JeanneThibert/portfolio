@@ -1,0 +1,35 @@
+.section-about{
+    padding: 2vh;
+    margin-top: 19vh;
+    position: relative;
+    background-color: rgb(48, 48, 48);
+    color: #fff;
+    box-shadow: 6px -4px 7px #0000007a;
+    font-family: 'Open Sans Condensed', sans-serif;
+   
+    hr{
+        border-top: 1px solid #fff;
+       
+    }
+}
+
+
+.progress{
+    width: 20rem;
+    background-color: dimgrey !important;
+}
+
+.progress-bar{
+    background-color: white !important;
+    color: rgb(48, 48, 48);
+    font-weight: bold;
+}
+
+.start{
+    font-size: 0.9rem;
+}
+
+.techno{
+    padding-left: 6rem;
+    padding-right: 2rem;
+}
