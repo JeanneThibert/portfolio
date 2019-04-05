@@ -10,7 +10,8 @@
   <!-- FONT-->
   <link href="https://fonts.googleapis.com/css?family=Cardo|Open+Sans+Condensed:300" rel="stylesheet">
   <!-- ICON -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <!-- FRAMEWORK -->
@@ -37,7 +38,8 @@
 
   </nav>
   <!-- BACKGROUND HEADER -->
-  <header class="background">
+  <header>
+    <?php include("background.php"); ?>
   </header>
 
   <!-- PROJECT-->
@@ -262,6 +264,16 @@
                   <p class="description_langage_modal">Langages et technologies utilisés dans ce projet :</p>
                   <li><i class="devicon-html5-plain-wordmark pr-2"></i>HTML</li>
                   <li><i class="devicon-css3-plain-wordmark pr-2"></i>CSS</li>
+                  <li><i class="devicon-javascript-plain pr-2"></i>JAVASCRIPT</li>
+                  <li><i class="devicon-github-plain-wordmark pr-2"></i>GITHUB</li>
+                  <li><i class="devicon-bootstrap-plain-wordmark pr-2"></i>BOOTSTRAP</li>
+                </ul>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 pb-5">
+                <ul class="langage_modal">
+                  <p class="description_langage_modal">Langages et technologies utilisés dans ce projet :</p>
+                  <li><i class="devicon-html5-plain-wordmark pr-2"></i>HTML</li>
+                  <li><i class="devicon-css3-plain-wordmark pr-2"></i>CSS</li>
                   <li><i class="devicon-sass-original pr-2"></i>SASS</li>
                   <li><i class="devicon-php-plain p-1"></i>PHP</li>
                   <li><i class="devicon-javascript-plain pr-2"></i>JAVASCRIPT</li>
@@ -293,9 +305,11 @@
       <div class="row">
         <div
           class=" pt-5 mb-5 col-12 col-sm-12 col-md-12 col-lg-6 d-flex flex-column justify-content-start align-items-center">
-          <img class="img-fluid" src="media/jeanne.jpg" width="500px">
-          <p class="">Passioné par l'informatique depuis mon enfance, grâce à une expérience j'ai pu découvrir ma passion folle pour le
-            développement web . Suite à ça j'ai effectué une formation à l'Access Code School de Vesoul. Actuellement en stage afin de valider mon titre professionnel de niveau 3 .
+          <img class="img-fluid" src="media/jeanne.png" width="500px">
+          <p class="">Passioné par l'informatique depuis mon enfance, grâce à une expérience j'ai pu découvrir ma
+            passion folle pour le
+            développement web . Suite à ça j'ai effectué une formation à l'Access Code School de Vesoul. Actuellement en
+            stage afin de valider mon titre professionnel de niveau 3 .
             Je recherche ensuite un emploi afin d'effectuer ma passion au quotidien.
           </p>
         </div>
@@ -303,101 +317,185 @@
           <div class="d-flex justify-content-between techno">
             <p class="start"><i class="devicon-html5-plain pr-2"></i>HTML</p>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped " role="progressbar"
-                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100" style="width: 100%">100%</div>
             </div>
           </div>
           <div class="d-flex justify-content-between techno">
             <p class="start"><i class="devicon-css3-plain pr-2"></i>CSS</p>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped " role="progressbar"
-                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100" style="width: 100%">100%</div>
             </div>
           </div>
           <div class="d-flex justify-content-between techno">
             <p class="start"><i class="devicon-sass-original pr-2"></i>SASS</p>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped " role="progressbar"
-                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100" style="width: 100%">100%</div>
             </div>
           </div>
           <div class="d-flex justify-content-between techno">
             <p class="start"><i class="devicon-bootstrap-plain pr-2"></i>BOOTSTRAP</p>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped " role="progressbar"
-                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100" style="width: 100%">100%</div>
             </div>
           </div>
           <div class="d-flex justify-content-between techno">
             <p class="start"><i class="devicon-git-plain pr-2"></i>GITHUB</p>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped " role="progressbar"
-                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                aria-valuemax="100" style="width: 100%">100%</div>
             </div>
           </div>
           <div class="d-flex justify-content-between techno">
             <p class="start"><i class="devicon-photoshop-line pr-2"></i>PHOTOSHOP</p>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="80"
-                aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" style="width: 80%">80%</div>
             </div>
           </div>
           <div class="d-flex justify-content-between techno">
             <p class="start"><i class="devicon-illustrator-line pr-2"></i>ILLUSTRATOR</p>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="80"
-                aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                aria-valuemax="100" style="width: 80%">80%</div>
             </div>
           </div>
           <div class="d-flex justify-content-between techno">
             <p class="start"><i class="devicon-php-plain pr-2"></i>PHP</p>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="70"
-                aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                aria-valuemax="100" style="width: 70%">70%</div>
             </div>
           </div>
           <div class="d-flex justify-content-between techno">
             <p class="start"><i class="devicon-javascript-plain pr-2"></i>JS</p>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="70"
-                aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                aria-valuemax="100" style="width: 70%">70%</div>
             </div>
           </div>
           <div class="d-flex justify-content-between techno">
             <p class="start"><i class="devicon-symfony-original pr-2"></i>SYMFONY</p>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="45"
-                aria-valuemin="0" aria-valuemax="100" style="width: 45%">45%</div>
+              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                aria-valuemax="100" style="width: 45%">45%</div>
             </div>
           </div>
           <div class="d-flex justify-content-between techno">
             <p class="start"><i class="devicon-vuejs-plain pr-2"></i>VUE.JS</p>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="40"
-                aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
+              <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                aria-valuemax="100" style="width: 40%">40%</div>
             </div>
           </div>
         </div>
         <div class="container">
           <div class="container-fluid">
-              <div class="d-flex justify-content-around ">
-                  <a href="https://github.com/JeanneThibert"  target="_blank" class="path_modal"><i class="devicon-github-plain-wordmark pr-2"></i>GitHub</a>
-                  <a href="#" target="_blank" class="path_modal"><i class="far fa-file pr-2"></i>Curriculum Vitae</a>
-                  <a href="https://www.linkedin.com/in/jeanne-thibert" target="_blank" class="path_modal"><i class="fab fa-linkedin pr-2"></i>Linkedin</a>
-              </div>
+            <div class="d-flex justify-content-around ">
+              <a href="https://github.com/JeanneThibert" target="_blank" class="path_modal"><i
+                  class="devicon-github-plain-wordmark pr-2"></i>GitHub</a>
+              <a href="#" target="_blank" class="path_modal"><i class="far fa-file pr-2"></i>Curriculum Vitae</a>
+              <a href="https://www.linkedin.com/in/jeanne-thibert" target="_blank" class="path_modal"><i
+                  class="fab fa-linkedin pr-2"></i>Linkedin</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-  </div>
-  </div>
   </div>
 
+  <!--CONTACT-->
+  <div class="section-contact d-flex flex-column justify-content-around align-items-center">
+    <div>
+      <h2 class="text-center title">Contact</h2>
+      <hr class="text-center">
+    </div>
+    <div class="container">
+      <div id="content">
+        <iframe class="img-fluid"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43370.246744554395!2d5.969232162569642!3d47.20405011483447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478d649a9c018d39%3A0x409ce34b313ed10!2sBeure!5e0!3m2!1sfr!2sfr!4v1553860349843!5m2!1sfr!2sfr"
+          width="1050" height="1050" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="row">
+        <!--personal information-->
+        <div
+          class="col-12 col-sm-12 col-md-6 col-lg-6 pb-5 d-flex flex-column justify-content-start align-items-center">
+          <div class="contact">
+          <ul>
+            <li class="size-contact"><i class="fas fa-mobile "></i>07.69.85.38.55</li>
+            <li class="size-contact"><i class="far fa-paper-plane "></i><a class="email_path"
+                href="mailto:jeannedevelop25@gmail.com">jeannedevelop25@gmail.com</a></li>
+          </ul>
+          </div>
+        </div>
+
+        <!--CONTACT FORM-->
+        <div
+          class=" container col-12 col-sm-12 col-md-6 col-lg-6 pb-5 d-flex flex-column justify-content-start align-items-center">
+          <form>
+            <input class="contact_form" placeholder="Nom" type="text" value="" required>
+            <input class="contact_form" placeholder="Prénom" type="text" value="" required>
+            <input class="contact_form" placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value=""
+              required>
+            <span class="validation-text">Please enter a valid email address.</span>
+            <div class="flex">
+              <textarea placeholder="Message" rows="1" required></textarea>
+            </div>
+            <button>Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--FOOTER-->
+
+  <footer class="footer-basic-centered">
+
+<p class="footer-company-motto"><img class="img-fluid" src="../media/logo_blanc.png" width="200px"></p>
+<div class="container">
+<div class=" d-flex justify-content-around pt-5">
+  
+<a href="https://github.com/JeanneThibert" target="_blank" class="path_modal"><i class="devicon-github-plain-wordmark pr-2"></i>GitHub</a>
+<a href="#" target="_blank" class="path_modal"><i class="far fa-file pr-2"></i>Curriculum Vitae</a>
+<a href="https://www.linkedin.com/in/jeanne-thibert" target="_blank" class="path_modal"><i class="fab fa-linkedin pr-2"></i>Linkedin</a>
+</div>
+</div>
 
 
 
-  <!-- SCRIPT WOO.JS & BOOTSTRAP -->
+<p class="footer-company-name pt-5">Jeanne Thibert &copy; 2019</p>
+
+</footer>
+
+<!-- SCRIPT WOO.JS & BOOTSTRAP -->
+<script src="node_modules/vivus/dist/vivus.js"></script>
+   <script type="text/javascript">
+    new Vivus('name', {
+        type: 'oneByOne',
+        duration: 50,
+        delay: 0,
+        
+        animTimingFunction: Vivus.EASE_OUT
+      },
+      function () {
+
+      });
+      new Vivus('dfej', {
+        type: 'oneByOne',
+        duration: 800,
+        delay:20 ,
+        
+        animTimingFunction: Vivus.EASE_OUT
+      },
+      function () {
+
+      });
+  </script> 
   <script src="js/wow.min.js"></script>
   <script>
     new WOW().init();
