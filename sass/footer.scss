@@ -61,3 +61,11 @@
 		line-height: 1.8;
 	}
 }
+
+//RESPONSIVE MAX 576PX
+
+@media (max-width: 575.98px)  { 
+	.logo_blanc{
+		width: 150px;
+	}
+}

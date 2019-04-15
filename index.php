@@ -18,28 +18,40 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css ">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- STYLE -->
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
 </head>
 
 <body>
   <!-- NAVIGATION -->
-  <nav>
 
-    <input id="menu-checkbox" type="checkbox">
-    <span class="burger__element"></span>
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="menu pb-5" href="#">Accueil</a>
+  <a class="menu pb-5" href="#">Projets</a>
+  <a class="menu pb-5" href="#">À propos</a>
+  <a class="menu pb-5" href="#">Contact</a>
+  
 
-    <ul class="menu">
-      <li class="p-3"><a class="menu_choice" href="#">Accueil</a></li>
-      <li class="p-3"><a class="menu_choice" href="#">Projets</a></li>
-      <li class="p-3"><a class="menu_choice" href="#">À propos</a></li>
-      <li class="p-3"><a class="menu_choice" href="#">Contact</a></li>
-    </ul>
+</div>
 
-  </nav>
+
+
+
+
+
+
+ 
   <!-- BACKGROUND HEADER -->
-  <header>
+  <header id="header">
+   
+  
+ 
     <?php include("background.php"); ?>
+    
   </header>
 
   <!-- PROJECT-->
@@ -269,19 +281,6 @@
                   <li><i class="devicon-bootstrap-plain-wordmark pr-2"></i>BOOTSTRAP</li>
                 </ul>
               </div>
-              <div class="col-12 col-sm-12 col-md-6 col-lg-6 pb-5">
-                <ul class="langage_modal">
-                  <p class="description_langage_modal">Langages et technologies utilisés dans ce projet :</p>
-                  <li><i class="devicon-html5-plain-wordmark pr-2"></i>HTML</li>
-                  <li><i class="devicon-css3-plain-wordmark pr-2"></i>CSS</li>
-                  <li><i class="devicon-sass-original pr-2"></i>SASS</li>
-                  <li><i class="devicon-php-plain p-1"></i>PHP</li>
-                  <li><i class="devicon-javascript-plain pr-2"></i>JAVASCRIPT</li>
-                  <li><i class="devicon-github-plain-wordmark pr-2"></i>GITHUB</li>
-                  <li><i class="devicon-bootstrap-plain-wordmark pr-2"></i>BOOTSTRAP</li>
-                  <li>TWIG</li>
-                </ul>
-              </div>
             </div>
             <div class="d-flex justify-content-around pb-5">
               <a href="#" class="path_modal">Voir en ligne</a>
@@ -364,7 +363,8 @@
             </div>
           </div>
           <div class="d-flex justify-content-between techno">
-            <p class="start"><i class="devicon-php-plain pr-2"></i>PHP</p>
+            <p class="start"><i class="devicon-php-plain pr-2"></i>PHP</p>  <script src="node_modules/vivus/src/vivus.js"></script>
+<script src="js/anim.js"></script>
             <div class="progress">
               <div class="progress-bar progress-bar-striped " role="progressbar" aria-valuenow="70" aria-valuemin="0"
                 aria-valuemax="100" style="width: 70%">70%</div>
@@ -425,12 +425,13 @@
           class="col-12 col-sm-12 col-md-6 col-lg-6 pb-5 d-flex flex-column justify-content-start align-items-center">
           <div class="contact">
           <ul>
-            <li class="size-contact"><i class="fas fa-mobile "></i>07.69.85.38.55</li>
+            <li class="size-contact"><i class="fas fa-mobile "></i><a class="phone_path" href="tel:+33769853855"> 07.69.85.38.55</a></li>
             <li class="size-contact"><i class="far fa-paper-plane "></i><a class="email_path"
                 href="mailto:jeannedevelop25@gmail.com">jeannedevelop25@gmail.com</a></li>
           </ul>
           </div>
-        </div>
+        </div> <script src="node_modules/vivus/src/vivus.js"></script>
+        <script src="js/anim.js"></script>
 
         <!--CONTACT FORM-->
         <div
@@ -440,7 +441,7 @@
             <input class="contact_form" placeholder="Prénom" type="text" value="" required>
             <input class="contact_form" placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value=""
               required>
-            <span class="validation-text">Please enter a valid email address.</span>
+            <span class="validation-text">Merci d'entrer une adresse email valide</span>
             <div class="flex">
               <textarea placeholder="Message" rows="1" required></textarea>
             </div>
@@ -456,7 +457,7 @@
 
   <footer class="footer-basic-centered">
 
-<p class="footer-company-motto"><img class="img-fluid" src="../media/logo_blanc.png" width="200px"></p>
+<p class="footer-company-motto"><img class="img-fluid logo_blanc" src="../media/logo_blanc.png" width="200px"></p>
 <div class="container">
 <div class=" d-flex justify-content-around pt-5">
   
@@ -468,35 +469,15 @@
 
 
 
-<p class="footer-company-name pt-5">Jeanne Thibert &copy; 2019</p>
+<p class="footer-company-name pt-5">Jeanne Thibert &copy; 2019 Tous droits réservés </p>
 
 </footer>
 
 <!-- SCRIPT WOO.JS & BOOTSTRAP -->
+<script src="js/menu.js"></script>
 <script src="node_modules/vivus/dist/vivus.js"></script>
-   <script type="text/javascript">
-    new Vivus('name', {
-        type: 'oneByOne',
-        duration: 50,
-        delay: 0,
-        
-        animTimingFunction: Vivus.EASE_OUT
-      },
-      function () {
-
-      });
-      new Vivus('dfej', {
-        type: 'oneByOne',
-        duration: 800,
-        delay:20 ,
-        
-        animTimingFunction: Vivus.EASE_OUT
-      },
-      function () {
-
-      });
-  </script> 
-  <script src="js/wow.min.js"></script>
+<script src="js/anim.js"></script>
+<script src="js/wow.min.js"></script>
   <script>
     new WOW().init();
   </script>

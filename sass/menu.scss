@@ -1,12 +1,22 @@
-#name{width: 25%;height: 35%;}
-#dfej {height:100%; width:56% }
+//HEADER
+#name{
+  width: 22%;
+  height: 35%;
+}
+.logo{
+  width: 300px
+}
+#dfej {
+  height:100%; 
+  width:53%;
+}
 
 
 // SCROOLBAR
 
 html {
-  overflow: auto;
-}
+  overflow: auto;}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -29,169 +39,158 @@ html {
 ::-webkit-scrollbar-thumb:window-inactive {
 background: rgb(255, 255, 255); 
 }
+//Change color in scrool header
 
-
-
-// Image header
-
- 
-//  Menu 
- 
- .menu_choice{
-     color: #fff;
-     text-decoration: none;
-     font-family: 'Cardo', serif;
-     font-size: xx-large;
-     display: inline-block;
-
-     &:hover{
-         text-decoration: none;
-         color: black;
-     }
- }
-
-
-.menu_choice:after {
-	content: '';
-	display: block;
-	margin: auto;
-	height: 3px;
-	width: 0px;
-	background: transparent;
-	transition: width .5s ease, background-color .5s ease;
+header{
+  background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
 }
-.menu_choice:hover:after {
-	width: 100%;
-	background: black;
+header.scrolled{
+
+  background-color: #303030;
 }
 
 
+
  
+//Menu*
+.menu_respo_men{
+  color: #995C5C;
+  position: fixed;
+  z-index: 150;
+  padding-right: 13px;
+}
+.menu_respo{
+  color: #995C5C;
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 150;
+  padding-top: 8px;
+  padding-right: 17px;
+}
+.burger{
+  font-family: "Sweet Sans";
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  transition: opacity 0.3s;
+  display: block;
+}
+
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidenav a {
  
- // Menu to be toggled.
-  .menu {
-    height: 40px;
-    width: 100%;
-    position: fixed;
-    top: 0%;
-    background-color: rgb(48, 48, 48);
-    text-align: center;
-    opacity: 0.85;
-    box-shadow: 0 0 7px rgba(48,48,48, 0.5);
-        height: 100%;
-      width: 100%
-        ;
-      position: fixed;
-      left: 100%;
-      padding-top: 180px;
-      display: unset;
-      z-index: 9; 
-      animation: not-checked-anim 1s ease-in-out both;
-    &__link {
-      padding: 10px;
-      color: rgba(0,0,0,0.4);
-      position: relative;
-      transition: 0.3s ease-in-out;
-      padding: 10px 24px 10px 10px; 
-      display: block; 
-    }
-    & li {
-      list-style-type: none;
-      position: relative;
-      text-align: center; 
-      transition: 0.3s ease-in-out;
-    }
+  text-decoration: none;
+  font-size: 40px;
+  color: #CCCCB8;
+  display: block;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+//Texte menu
+
+.menu {
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-decoration: none;
+  font-size: larger;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
   }
-  
-  // Menu toggler: checkbox.
-  #menu-checkbox {
-    display: block; 
-    width: 40px;
-    height: 35px;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    opacity: 0; 
-    z-index: 11;
+
+}
+
+.menu:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.menu:hover:after {
+  width: 100%;
+  background: white;
+}
+
+
+//RESPONSIVE MAX 576PX
+
+@media (max-width: 575.98px)  { 
+  .logo{
+    width:150px;
   }
+  #name{
+   
+      width: 50%;
+      height: 60%;
   
-  // Burger.
-  .burger__element {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 12px;
-    background-color: #000;
-    width: 30px;
-    height: 4px;
-    margin: 4px; 
-    transition: 0.5s ease-in-out;
-    z-index: 10;
-    cursor: pointer;
-    border-radius: 3px;
-    &::before {
-    content: '';
-      position: absolute;
-      top: 10px;
-      left: 0;
-      background-color: #000;
-      width: 30px;
-      height: 4px;
-      border-radius: 3px;
-    }
-    &::after {
-      content: '';
-      position: absolute;
-      top: -10px;
-      left: 0;
-      background-color: #000;
-      width: 30px;
-      height: 4px;
-      border-radius: 3px;
-    }
   }
-  
-  #menu-checkbox:checked ~ .burger__element {
-    transform: rotate(180deg);
-    transition: 0.5s ease-in-out;
+  #dfej{
+    width: 87%;
+      height: 100%;
   }
-  
-  #menu-checkbox:checked ~ .burger__element::before {
-    width: 20px;
-    top: 2px;
-    left: -8px;
-    transform: rotate(45deg) translateX(5px);
-    transition: 0.5s ease-in-out;
-  }
-  
-  #menu-checkbox:checked ~ .burger__element::after {
-    width: 20px;
-    top: 2px;
-    left: -12px;
-    -webkit-transform: rotate(-45deg) translateX(-5px);
-    transform: rotate(-45deg) translateX(12px);
-    transition: 1s ease-in-out;
-  }
-  
-  #menu-checkbox:checked ~ .menu {
-    animation: checked-anim 1s ease-in-out both;  
-  } 
-  
-  @keyframes checked-anim {
-    0% {
-      transform: translateX(0%)
-    }
-    100% {
-      transform: translateX(-100%)
-    }
-  }
-  
-  @keyframes not-checked-anim {
-    0% {
-      transform: translateX(-100%)
-    }
-    100% {
-      transform: translateX(0%)
-    }
-  }
+
+
+
+}
+
+

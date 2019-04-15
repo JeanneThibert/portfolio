@@ -17,9 +17,12 @@ hr{
 
 }
 
+
+
+
 .opacity {
 
-  cursor: url("../media/cursor.cur"), pointer !important;
+  
 
 }
 
@@ -92,7 +95,7 @@ li {
     /* Safari and Chrome */
     z-index: 1051;
     width: 1px;
-    height: 50px;
+    height: 40px;
     margin-left: 35px;
     /* IE 9 */
     -webkit-transform: rotate(45deg);
@@ -104,7 +107,7 @@ li {
       /* Safari and Chrome */
       z-index: 1052;
       width: 1px;
-      height: 50px;
+      height: 40px;
       /* IE 9 */
       -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
@@ -143,4 +146,11 @@ li {
 .path_modal:hover:after {
   width: 100%;
   background: white;
+}
+
+
+@media (max-width: 575.98px)  { 
+  hr{
+    width:auto;
+  }
 }

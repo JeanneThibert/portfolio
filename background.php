@@ -1,4 +1,10 @@
  <!-- NAME -->
+ <section id="container">
+	 <div class="d-flex justify-content-end">
+	 <small class="menu_respo_men" onclick="openNav()">MENU</small> 
+  <span class="menu_respo" onclick="openNav()">&#9776;</span>
+	 </div>
+	 <div class="d-flex justify-content-start">
  <svg id="name" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px"
 	 height="100px" viewBox="0 0 300 100" enable-background="new 0 0 300 100" xml:space="preserve">
 
@@ -213,17 +219,21 @@
 		c-2.751,0.368-6.209,2.258-6.318,5.514"/>
 </g>
 </svg>
+</div>
+</section>
+
 
  <!-- LOGO -->
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
         <div class="flex-column justify-content-center align-items-center ">
-            <img class="img-fluid" src="../media/logo.png" width="350px">
+            <img class=" logo img-fluid" src="../media/logo.png" >
         </div>
     </div>
 
 
  <!-- DESCRIPTION -->
- <section class="d-flex justify-content-center">
+ <section id="container">
+	 <div class="d-flex justify-content-center">
  <svg id="dfej" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px"
 	 height="200px" viewBox="0 0 500 200" enable-background="new 0 0 500 200" xml:space="preserve">
 <defs>
@@ -644,5 +654,6 @@
 		c-0.348,1.162-1.026,2.327-1.604,3.376c-1.034,1.878-2.367,2.974-3.718,4.515"/>
 </g>
 </svg>
+</div>
 
 </section>
