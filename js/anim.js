@@ -2,7 +2,7 @@
     type: 'oneByOne',
     animTimingFunction: Vivus.EASE_OUT,
     pathTimingFunction: Vivus.EASE_OUT,
-    duration: 900,
+    duration: 500,
     
    
   },
@@ -12,8 +12,8 @@
     type: 'oneByOne',
     animTimingFunction: Vivus.EASE_OUT,
     pathTimingFunction: Vivus.EASE_OUT,
-    duration: 500,
-    delay:50,
+    duration: 400,
+    delay:10,
     
     
   },

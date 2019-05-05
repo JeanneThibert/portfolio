@@ -8,7 +8,7 @@
   <!-- TITILE -->
   <title>Jeanne T.</title>
   <!-- FONT-->
-  <link href="https://fonts.googleapis.com/css?family=Cardo|Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <!-- ICON -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- STYLE -->
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- ICONE -->
+  <link rel="icon" href="jeanne.ico">
 
 
 </head>
@@ -96,6 +98,27 @@
             </div>
           </a>
         </div>
+        <div class=" col-12 col-sm-12 col-md-12 col-lg-12 pt-3" style="float:none;">
+          <a class="portfolio-link" data-toggle="modal" href="#Modal5">
+            <div class="wow zoomIn opacity">
+              <img class="img-fluid " src="../media/jeux_plus_ou_moin.jpg" alt="lalaallala">
+            </div>
+          </a>
+        </div>
+        <div class=" col-12 col-sm-12 col-md-12 col-lg-12 pt-3" style="float:none;">
+          <a class="portfolio-link" data-toggle="modal" href="#Modal6">
+            <div class="wow zoomIn opacity">
+              <img class="img-fluid " src="../media/wetransfer.jpg" alt="lalaallala">
+            </div>
+          </a>
+        </div>
+        <div class=" col-12 col-sm-12 col-md-12 col-lg-12 pt-3" style="float:none;">
+          <a class="portfolio-link" data-toggle="modal" href="#Modal7">
+            <div class="wow zoomIn opacity">
+              <img class="img-fluid " src="../media/fastcat.jpg" alt="lalaallala">
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -141,8 +164,8 @@
               </div>
             </div>
             <div class="d-flex justify-content-around pb-5 size_language">
-              <a href="#" class="path_modal">Voir en ligne</a>
-              <a href="#" class="path_modal">GitHub</a>
+              <a href="access_movie/" target="_blank" class="path_modal">Voir en ligne</a>
+              <a href="https://github.com/JeanneThibert/access_movie" target="_blank" class="path_modal">GitHub</a>
             </div>
           </div>
         </div>
@@ -189,8 +212,8 @@
               </div>
             </div>
             <div class="d-flex justify-content-around pb-5 size_language">
-              <a href="#" class="path_modal">Voir en ligne</a>
-              <a href="#" class="path_modal">GitHub</a>
+              <a href="avatar_contact/" target="_blank" class="path_modal">Voir en ligne</a>
+              <a href="https://github.com/JeanneThibert/avatar" class="path_modal">GitHub</a>
             </div>
           </div>
         </div>
@@ -236,8 +259,8 @@
               </div>
             </div>
             <div class="d-flex justify-content-around pb-5 size_language">
-              <a href="#" class="path_modal">Voir en ligne</a>
-              <a href="#" class="path_modal">GitHub</a>
+              <a href="puissance-4/" target="_blank" class="path_modal">Voir en ligne</a>
+              <a href="https://github.com/JeanneThibert/puissance-4" class="path_modal">GitHub</a>
             </div>
           </div>
         </div>
@@ -283,8 +306,8 @@
               </div>
             </div>
             <div class="d-flex justify-content-around pb-5 size_language">
-              <a href="#" class="path_modal">Voir en ligne</a>
-              <a href="#" class="path_modal">GitHub</a>
+              <a href="/explorateur" target="_blank" class="path_modal">Voir en ligne</a>
+              <a href="https://github.com/JeanneThibert/explorateur/" class="path_modal">GitHub</a>
             </div>
           </div>
         </div>
@@ -292,6 +315,140 @@
     </div>
   </div>
 
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="Modal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      </div>
+    </div>
+    <div class="container background_modal">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <div class="d-flex pt-3 ">
+            <h2 class="title_modal">Jeux plus ou moin</h2>
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="description_modal">Création du jeux plus ou moin , vous découvrir un chiffre aléatoire entre 0 et 100</p>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 pb-5 size_media">
+                <img class="portfolio_media img-fluid " src="../media/jeux_plus_ou_moin_960.jpg" alt="lalaallala" width="500px">
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 pb-5 size_language ">
+                <ul class="langage_modal">
+                  <p class="description_langage_modal">Langages et technologies utilisés dans ce projet :</p>
+                  <li><i class="devicon-html5-plain-wordmark pr-2"></i>HTML</li>
+                  <li><i class="devicon-css3-plain-wordmark pr-2"></i>CSS</li>
+                  <li><i class="devicon-javascript-plain pr-2"></i>JAVASCRIPT</li>
+                  <li><i class="devicon-github-plain-wordmark pr-2"></i>GITHUB</li>
+                  <li><i class="devicon-bootstrap-plain-wordmark pr-2"></i>BOOTSTRAP</li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex justify-content-around pb-5 size_language">
+              <a href="/jeux_plus_ou_moins" target="_blank" class="path_modal">Voir en ligne</a>
+              <a href="https://github.com/JeanneThibert/jeux_plus_ou_moins" target="_blank" class="path_modal">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Modal 6 -->
+    <div class="portfolio-modal modal fade" id="Modal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      </div>
+    </div>
+    <div class="container background_modal">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <div class="d-flex pt-3 ">
+            <h2 class="title_modal">WeTransfer</h2>
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="description_modal">Création d'un site , permettant d'envoyer des fichiers d'une personne à une autre.</p>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 pb-5 size_media">
+                <img class="portfolio_media img-fluid " src="../media/wetransfer_960.jpg" alt="lalaallala" width="500px">
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 pb-5 size_language ">
+                <ul class="langage_modal">
+                  <p class="description_langage_modal">Langages et technologies utilisés dans ce projet :</p>
+                  <li><i class="devicon-html5-plain-wordmark pr-2"></i>HTML</li>
+                  <li><i class="devicon-css3-plain-wordmark pr-2"></i>CSS</li>
+                  <li><i class="devicon-sass-original pr-2"></i>SASS</li>
+                  <li><i class="devicon-javascript-plain pr-2"></i>JAVASCRIPT</li>
+                  <li><i class="devicon-php-plain pr-2"></i>PHP / TWIG</li>
+                  <li><i class="devicon-github-plain-wordmark pr-2"></i>GITHUB</li>
+                  <li><i class="devicon-bootstrap-plain-wordmark pr-2"></i>BOOTSTRAP</li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex justify-content-around pb-5 size_language">
+              <a href="/wetransfer_like" target="_blank" class="path_modal">Voir en ligne</a>
+              <a href="https://github.com/JeanneThibert/wetransfer_like" target="_blank" class="path_modal">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal 7 -->
+   <div class="portfolio-modal modal fade" id="Modal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      </div>
+    </div>
+    <div class="container background_modal">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <div class="d-flex pt-3 ">
+            <h2 class="title_modal">FastCat</h2>
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="description_modal"> Création d'un site d’information pour la course sur leurre ouverte à toutes les races</p>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 pb-5 size_media">
+                <img class="portfolio_media img-fluid " src="../media/fastcat_960.jpg" alt="lalaallala" width="500px">
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 pb-5 size_language ">
+                <ul class="langage_modal">
+                  <p class="description_langage_modal">Langages et technologies utilisés dans ce projet :</p>
+                  <li><i class="devicon-wordpress-plain-wordmark pr-2"></i>WORDPRESS</li>
+                  <li><i class="devicon-css3-plain-wordmark pr-2"></i>CSS</li>
+                  <li><i class="devicon-jquery-plain-wordmark pr-2"></i>JQUERY</li>
+                  <li><i class="devicon-javascript-plain pr-2"></i>JAVASCRIPT</li>
+                  <li><i class="devicon-php-plain pr-2"></i>PHP</li>
+                
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex justify-content-around pb-5 size_language">
+              <a href="https://fastcat.info/" target="_blank" class="path_modal">Voir en ligne</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- ABOUT -->
 
   <div id="about" class="wow fadeInRight section-about d-flex flex-column justify-content-center align-items-center">
@@ -432,23 +589,6 @@
           </div>
         </div> <script src="node_modules/vivus/src/vivus.js"></script>
         <script src="js/anim.js"></script>
-
-        <!--CONTACT FORM-->
-        <!-- <div
-          class=" container col-12 col-sm-12 col-md-12 col-lg-6 pb-5 d-flex flex-column justify-content-start align-items-center contact_form_size">
-         <form>
-            <input class="contact_form" placeholder="Nom" type="text" value="" required>
-            <input class="contact_form" placeholder="Prénom" type="text" value="" required>
-            <input class="contact_form" placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value=""
-              required>
-            <span class="validation-text">Merci d'entrer une adresse email valide</span>
-            <div class="flex">
-              <textarea placeholder="Message" rows="1" required></textarea>
-            </div>
-            <button class="buton_send" style="font-family: 'Poppins', sans-serif; width: -moz-available;">Envoyer</button>
-          </form>
-        </div>-->
- 
     </div>
   </div>
 
