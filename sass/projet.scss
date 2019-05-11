@@ -1,13 +1,13 @@
 //Showing projects
-
+.opacity {
+  cursor: url("../media/cursor.cur"), pointer !important; }
 
 .title {
   font-size: 4rem;
 }
 
 .content {
-  font-size: 1.2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -17,6 +17,13 @@ hr {
   margin: auto;
 
 }
+.realisation{
+  font-size: unset;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+
 
 
 
@@ -48,7 +55,11 @@ hr {
 
 .description_modal {
   color: white;
-  padding-bottom: 2rem;
+  font-size: large;
+}
+
+.realisation{
+  color: white;
   font-size: large;
 }
 
@@ -152,6 +163,7 @@ li {
   .content{
     font-size: 0.6rem;
     padding-top: 0.5rem;
+    padding-bottom: 0rem;
   }
   .title_modal{
     font-size: 0.75rem;
@@ -173,6 +185,9 @@ li {
     height: 15px;
   }
   .description_modal{
+    font-size: 0.5rem;
+  }
+  .realisation{
     font-size: 0.5rem;
   }
   .description_langage_modal{
@@ -228,6 +243,9 @@ li {
   .description_modal {
     font-size: 0.65rem;
   }
+  .realisation{
+    font-size: 0.65rem;
+  }
 
   .description_langage_modal {
     font-size: 0.65rem;
@@ -277,6 +295,9 @@ li {
   }
 
   .description_modal {
+    font-size: small;
+  }
+  .realisation{
     font-size: small;
   }
 
@@ -339,6 +360,10 @@ li {
     font-size: smaller;
   }
 
+  .realisation{
+    font-size: smaller;
+  }
+
   .portfolio_media {
     width: 400px;
   }
@@ -388,6 +413,9 @@ li {
   .description_modal {
     font-size: initial;
   }
+  .realisation{
+    font-size: initial;
+  }
 
   .description_langage_modal {
     font-size: small;
@@ -408,7 +436,7 @@ li {
 //RESPONSIVE MAX 1199.98PX
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .content {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     font-size: 1.1rem;
   }
 
@@ -418,9 +446,16 @@ li {
   }
 
   .description_modal {
-    padding-bottom: 2rem;
     font-size: unset;
 
+  }
+  .realisation{
+    font-size: unset;
+  }
+  .realisation{
+    font-size: unset;
+    color: white;
+    padding-bottom: 2rem;
   }
 
   .description_langage_modal {

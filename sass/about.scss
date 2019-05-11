@@ -38,7 +38,7 @@
 }
 
 .start {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .techno {
@@ -75,8 +75,20 @@
   background: white;
 }
 
+.description_about {
+  
+  padding-left: 2rem;
+  padding-right: 6rem;
+  padding-top: 1rem;
+
+
+}
 //RESPONSIVE MAX 309.98PX
 @media (min-width:240px) and (max-width: 299.98px) {
+  .section-about {
+    margin-top: 6vh;
+    
+}
 .jeanne{
   font-size: 0.5rem;
   padding-top: 0.5rem;
@@ -122,6 +134,9 @@
 .start{
   font-size: 0.6rem;
 
+}
+.about_size{
+  padding-bottom: 0rem;
 }
 }
 
@@ -215,9 +230,11 @@
   }
 
   .description_about {
-    font-size: smaller;
+    font-size: inherit;
     padding-left: 20px;
-  }
+    padding-right: 20px;
+}
+  
   .path_modal_about::after{
     height: 2px;
   }
@@ -292,7 +309,7 @@
   .techno {
 
     padding-left: 3rem;
-    padding-right: 2rem;
+    padding-right: 3rem;
 
   }
 

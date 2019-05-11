@@ -226,7 +226,7 @@
  <!-- LOGO -->
     <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
         <div class="flex-column justify-content-center align-items-center ">
-            <img class=" logo img-fluid" src="../media/logo.png" >
+            <img class=" logo img-fluid" src="../media/logo.png" alt="logo noir" >
         </div>
     </div>
 

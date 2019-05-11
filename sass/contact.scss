@@ -17,82 +17,19 @@
   padding-bottom: 4rem;
 }
 
-.size-contact {
-  font-size: 2em;
-}
 
-.contact {
+contact {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
-//PHONE & MAIL
-.fa-mobile {
-  padding-right: 3.5rem;
-  padding-left: 0.5rem;
-}
 
-.fa-paper-plane {
-  padding-right: 3.5rem;
-}
 
-.email_path {
-  color: #303030;
-
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-    color: #303030;
-    font-weight: bold;
-  }
+.maps{
+  width: 2000px;
+  height: 313px;
 
 }
-
-.email_path:after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 3px;
-  width: 0px;
-  background: transparent;
-  transition: width .5s ease, background-color .5s ease;
-}
-
-.email_path:hover:after {
-  width: 100%;
-  background: #303030;
-}
-
-
-.phone_path {
-  color: #303030;
-
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-    color: #303030;
-    font-weight: bold;
-  }
-
-}
-
-.phone_path:after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 3px;
-  width: 0px;
-  background: transparent;
-  transition: width .5s ease, background-color .5s ease;
-}
-
-.phone_path:hover:after {
-  width: 100%;
-  background: #303030;
-}
-
 //GOOGLE MAPS
 
 div#content {
@@ -112,6 +49,109 @@ div#content iframe {
   left: 0;
 }
 
+.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid #000000;
+  border-radius: 0;
+}
+.form-control:focus {
+  color: #303030;
+  background-color: #fff;
+  border-bottom: 2px solid #303030; 
+  border-color: none !important;
+  box-shadow: none !important;
+  
+}
+
+$bg: #f3f8fa;
+$white: #fff;
+$black: #303030;
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+  transition: $property $duration $ease;
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  &.learn-more {
+    width: 12rem;
+    height: auto;
+    .circle {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: relative;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: $black;
+      border-radius: 1.625rem;
+      .icon {
+        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: $white;
+        &.arrow {
+          @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+          left: 0.625rem;
+          width: 1.125rem;
+          height: 0.125rem;
+          background: none;
+          &::before {
+            position: absolute;
+            content: '';
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    .button-text {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1.85rem;
+      color: $black;
+      font-weight: 700;
+      line-height: 1.6;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  &:hover {
+    .circle {
+      width: 100%;
+      .icon {
+        &.arrow {
+        background: $white;
+        transform: translate(1rem, 0);
+        }
+      }
+    }
+    .button-text {
+      color: $white;
+    }
+  }
+}
+
 //RESPONSIVE MAX 309.98PX
 @media (min-width:240px) and (max-width: 299.98px) {
   .title_contact {
@@ -123,27 +163,20 @@ div#content iframe {
     font-size: 0.35rem;
 
   }
-  .fa-mobile{
-    padding-right: 0.5rem;
-    padding-left: 0rem; 
-  }
-
-  .fa-paper-plane{
-    padding-right: 0.5rem;
-  }
+  
  
 
   #contact {
     padding-bottom: 2rem;
   }
-
-  .phone_path::after {
-    height: 2px;
+  
+  .alert{
+    font-size: xx-small;
   }
 
-  .email_path::after {
-    height: 2px;
-  }
+
+
+
 }
 
 
@@ -158,27 +191,16 @@ div#content iframe {
     font-size: 0.49rem;
 }
 
-  .fa-mobile{
-    padding-right: 0.5rem;
-    padding-left: 0rem; 
-  }
-
-  .fa-paper-plane{
-    padding-right: 0.5rem;
-  }
  
 
   #contact {
     padding-bottom: 2rem;
   }
-
-  .phone_path::after {
-    height: 2px;
+  .alert{
+    font-size: xx-small;
   }
 
-  .email_path::after {
-    height: 2px;
-  }
+  
 }
 
 //RESPONSIVE MAX 575.98PX
@@ -188,14 +210,6 @@ div#content iframe {
     padding-bottom: 4rem;
   }
 
-  .fa-mobile{
-    padding-right: 0.5rem;
-    padding-left: 0rem; 
-  }
-
-  .fa-paper-plane{
-    padding-right: 0.5rem;
-  }
  
 
     .contact {
@@ -204,23 +218,18 @@ div#content iframe {
 
   }
 
+  .alert{
+    font-size: smaller;
+  }
 
 
-  .phone {
+  
+
+  #contact {
     padding-bottom: 0rem;
   }
 
-  #contact {
-    padding-bottom: 3rem;
-  }
-
-   .phone_path::after {
-    height: 2px;
-  }
-
-  .email_path::after {
-    height: 2px;
-  }
+  
 
 }
 
@@ -239,13 +248,7 @@ div#content iframe {
   .section-contact {
     padding-bottom: 2rem;
   }
-  .phone_path::after {
-    height: 2px;
-  }
-
-  .email_path::after {
-    height: 2px;
-  }
+ 
 }
 
 //RESPONSIVE MAX 991.98PX
@@ -262,13 +265,7 @@ div#content iframe {
   .contact_form_size {
     padding-bottom: 5rem;
   }
-  .phone_path::after {
-    height: 2px;
-  }
-
-  .email_path::after {
-    height: 2px;
-  }
+  
 }
 
 //RESPONSIVE MAX 1199.98PX
